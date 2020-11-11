@@ -1,1 +1,1 @@
-gcc main.cpp -L/usr/local/lib/ -luv -o out
+gcc main.cpp -L./libs/ -luv -I./include -o out
