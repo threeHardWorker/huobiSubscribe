@@ -1,0 +1,13 @@
+CC=gcc
+CFLAGS=-g -Wall -O2
+LIBS=-L./libs/ -luv
+INCLUDES=-I./include
+
+TARGET_HTRD_MINION_PROTECTOR = out
+all:$(TARGET_HTRD_MINION_PROTECTOR)
+
+$(TARGET_HTRD_MINION_PROTECTOR):
+	$(CC) -o $@ $(INCLUDES) $(CFLAGS) main.cpp $(LIBS)
+
+clean:
+	rm  -f *.o $(TARGET_HTRD_MINION_PROTECTOR)
