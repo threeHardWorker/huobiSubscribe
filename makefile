@@ -2,7 +2,7 @@ CC=g++
 CFLAGS=-g -Wall -O2
 CPP_FLAGS='-std=c++11'
 LIBS=-I./libs -lboost_system -lpthread
-INCLUDES=-I ./ -I ./include
+INCLUDES=-I ./ -I ./include -I ./include/lib/rapidjson/include -I ./include/lib/websocketpp/
 
 TARGET_HTRD_MINION_PROTECTOR = out
 all:$(TARGET_HTRD_MINION_PROTECTOR)
