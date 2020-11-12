@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "WebSocketClient.h"
-#include <unistd.h>
-
-/*#include "include/uv.h"
+#include "include/uv.h"
 
 int main() {
     uv_loop_t *loop = (uv_loop_t*)malloc(sizeof(uv_loop_t));
@@ -15,13 +12,4 @@ int main() {
     uv_loop_close(loop);
     free(loop);
     return 0;
-}*/
-
-int main()
-{
-    WebSocketClient w("ws://localhost:9002");
-    while(1)
-    {
-        sleep(10);
-    }
 }
